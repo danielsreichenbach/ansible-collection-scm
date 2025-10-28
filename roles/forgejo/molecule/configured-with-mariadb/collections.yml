@@ -1,0 +1,5 @@
+---
+
+collections:
+  - name: bodsch.certs
+    version: ">=0.9.0"

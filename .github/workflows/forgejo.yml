@@ -74,6 +74,11 @@ jobs:
         with:
           python-version: "${{ matrix.python_version }}"
 
+      - name: Install system packages
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y python3-dateutil
+
       - name: install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -126,6 +131,11 @@ jobs:
         with:
           python-version: "${{ matrix.python_version }}"
 
+      - name: Install system packages
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y python3-dateutil
+
       - name: install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -168,6 +178,7 @@ jobs:
           - configured
           - configured-with-mariadb
           - configured-with-ldap
+          - configured-with-local-users
           - custom-config-directory
           - update
         collection_role:
