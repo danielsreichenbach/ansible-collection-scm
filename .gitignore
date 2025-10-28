@@ -4,3 +4,8 @@
 __pycache__
 .cache
 .directory
+roles/**/.github
+roles/**/tox.ini
+roles/**/test-requirements.txt
+hooks
+hooks
